@@ -9,21 +9,19 @@ class CpfTest extends PHPUnit_Framework_TestCase
     public function testValidCpf()
     {
         $cpfValidator = new Cpf();
-        
         $this->assertTrue($cpfValidator->isValid('008.840.949-01'));
     }
 
     public function testInalidCpf()
     {
         $cpfValidator = new Cpf();
-        
         $this->assertFalse($cpfValidator->isValid('008.840.949-00'));
     }
 
     public function testValidWhoIsInvalid()
     {
         $cpfValidator = new Cpf();
-        //Lista de CPFs que passam na validação mas são inválidos pela Receita
+        // Lista de CPFs que passam na validação mas são inválidos pela Receita
         $this->assertFalse($cpfValidator->isValid('000.000.000-00'));
         $this->assertFalse($cpfValidator->isValid('111.111.111-11'));
         $this->assertFalse($cpfValidator->isValid('222.222.222-22'));
@@ -34,5 +32,23 @@ class CpfTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($cpfValidator->isValid('777.777.777-77'));
         $this->assertFalse($cpfValidator->isValid('888.888.888-88'));
         $this->assertFalse($cpfValidator->isValid('999.999.999-99'));
+    }
+
+    public function testEmpty()
+    {
+        $cpfValidator = new Cpf();
+        $this->assertFalse($cpfValidator->isValid(''));
+    }
+
+    public function testMoreThan11()
+    {
+        $cpfValidator = new Cpf();
+        $this->assertFalse($cpfValidator->isValid('111222333444'));
+    }
+
+    public function testEmptyMessage()
+    {
+        $cpfValidator = new Cpf();
+        $this->assertEmpty($cpfValidator->getMessages());
     }
 }
