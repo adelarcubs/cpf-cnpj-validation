@@ -26,19 +26,19 @@ class Cpf implements ValidatorInterface
      * getMessages() will return an array of messages that explain why the
      * validation failed.
      *
-     * @param mixed $value
+     * @param mixed $value            
      * @return bool
      * @throws Exception\RuntimeException If validation of $value is impossible
      */
-    public function isValid($cpf)
+    public function isValid($value)
     {
- // Verifica se um número foi informado
-        if (empty($cpf)) {
+        // Verifica se um número foi informado
+        if (empty($value)) {
             return false;
         }
         
         // Elimina possivel mascara
-        $cpf = preg_replace('/[^0-9]/', '', (string) $cpf);
+        $cpf = preg_replace('/[^0-9]/', '', (string) $value);
         $cpf = str_pad($cpf, 11, '0', STR_PAD_LEFT);
         
         // Verifica se o numero de digitos informados é igual a 11

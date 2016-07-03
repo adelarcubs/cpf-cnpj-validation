@@ -17,9 +17,9 @@ class Cnpj implements ValidatorInterface
      * @return bool
      * @throws Exception\RuntimeException If validation of $value is impossible
      */
-    public function isValid($cnpj)
+    public function isValid($value)
     {
-        $cnpj = preg_replace('/[^0-9]/', '', (string) $cnpj);
+        $cnpj = preg_replace('/[^0-9]/', '', (string) $value);
         // Valida tamanho
         if (strlen($cnpj) != 14) {
             return false;
