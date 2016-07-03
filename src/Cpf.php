@@ -26,12 +26,13 @@ class Cpf implements ValidatorInterface
      * getMessages() will return an array of messages that explain why the
      * validation failed.
      *
-     * @param mixed $value            
+     * @param mixed $value
      * @return bool
      * @throws Exception\RuntimeException If validation of $value is impossible
      */
     public function isValid($cpf)
-    { // Verifica se um número foi informado
+    {
+ // Verifica se um número foi informado
         if (empty($cpf)) {
             return false;
         }
@@ -53,7 +54,6 @@ class Cpf implements ValidatorInterface
         // CPF é válido
         
         for ($t = 9; $t < 11; $t ++) {
-            
             for ($d = 0, $c = 0; $c < $t; $c ++) {
                 $d += $cpf{$c} * (($t + 1) - $c);
             }
