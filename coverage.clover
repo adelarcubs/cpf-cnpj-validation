@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1467577607">
+  <project timestamp="1467577607">
+    <package name="CpfCnpjValidation">
+      <file name="/home/adelarcubs/projetos/financas_velho/cpf-cnpj-validation/src/Cnpj.php">
+        <class name="Cnpj" namespace="CpfCnpjValidation">
+          <metrics complexity="10" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="12" elements="17" coveredelements="12"/>
+        </class>
+        <line num="20" type="method" name="isValid" visibility="public" complexity="9" crap="9.24" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="32" type="stmt" count="2"/>
+        <line num="33" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="56" type="method" name="getMessages" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="60" ncloc="32" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="12" elements="17" coveredelements="12"/>
+      </file>
+      <file name="/home/adelarcubs/projetos/financas_velho/cpf-cnpj-validation/src/Cpf.php">
+        <class name="Cpf" namespace="CpfCnpjValidation">
+          <metrics complexity="8" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="13" elements="18" coveredelements="13"/>
+        </class>
+        <line num="33" type="method" name="isValid" visibility="public" complexity="7" crap="7.12" count="3"/>
+        <line num="36" type="stmt" count="3"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="3"/>
+        <line num="42" type="stmt" count="3"/>
+        <line num="45" type="stmt" count="3"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="3"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="79" type="method" name="getMessages" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="81" type="stmt" count="0"/>
+        <metrics loc="83" ncloc="47" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="13" elements="18" coveredelements="13"/>
+      </file>
+    </package>
+    <metrics files="2" loc="143" ncloc="79" classes="2" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="25" elements="35" coveredelements="25"/>
+  </project>
+</coverage>
