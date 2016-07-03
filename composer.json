@@ -9,5 +9,8 @@
 		"psr-4": {
 			"CpfCnpjValidation\\": ["src","test"]
 		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^5.4"
 	}
 }
