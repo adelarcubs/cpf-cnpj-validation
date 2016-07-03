@@ -5,5 +5,5 @@ A ideia é usar o zend validator para fazer a validação, não sei é para os o
 ##Instalação
 
 ```
-composer require adelarcubs/ofxparser
+composer require adelarcubs/cpf-cnpj-validation
 ```
