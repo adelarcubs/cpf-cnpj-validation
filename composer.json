@@ -1,0 +1,13 @@
+{
+	"name": "adelarcubs/cpf-cnpj-validation",
+	"require": {
+		"php": ">=5.6",
+		"zendframework/zend-validator": "^2.8"
+	},
+	"license": "BSD-3-Clause",
+	"autoload": {
+		"psr-4": {
+			"CpfCnpjValidation\\": ["src","test"]
+		}
+	}
+}
