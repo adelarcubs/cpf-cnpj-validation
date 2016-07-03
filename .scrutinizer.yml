@@ -4,7 +4,7 @@ build:
         redis: false
         postgresql: false
         php:
-            version: [5.5, 5.6, 7]
+            version: 5.5
 tools:
     php_sim: true
     php_pdepend: true
