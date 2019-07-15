@@ -16,6 +16,7 @@
 	},
 	"scripts": {
 		"cs": "phpcs --standard=PSR2 src test",
-		"cs-fix": "phpcbf --standard=PSR2 src test"
+		"cs-fix": "phpcbf --standard=PSR2 src test",
+		"test": "phpunit"
 	}
 }
