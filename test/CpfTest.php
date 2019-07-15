@@ -1,9 +1,9 @@
 <?php
 namespace CpfCnpjValidation;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class CpfTest extends PHPUnit_Framework_TestCase
+class CpfTest extends TestCase
 {
 
     public function testValidCpf()
